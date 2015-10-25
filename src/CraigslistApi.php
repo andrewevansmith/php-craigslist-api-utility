@@ -7,7 +7,6 @@ use Sunra\PhpSimple\HtmlDomParser;
 
 class CraigslistApi
 {
-    // Help with duplication issues
     public $remove_duplicates;
     protected $ids = [];
     protected $titles = [];

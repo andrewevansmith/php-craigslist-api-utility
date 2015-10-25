@@ -1,7 +1,7 @@
 ## Simple Craigslist API utility
 Provides convenient way of getting listing data by various Craigslist filters.
 
-*IMPORTANT NOTE* - This software was developed as an experiment sampling web scraping basics.  Craigslist may prohibit use of automated gathering tools.  Use at your own discretion.
+###IMPORTANT NOTE - For educational purposes only.  This software was developed as an experiment to demonstrate web scraping basics.  Craigslist may prohibit use of automated gathering tools.  Use at your own discretion.
 
 Features
 ------------

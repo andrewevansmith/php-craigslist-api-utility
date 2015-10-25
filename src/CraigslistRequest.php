@@ -5,15 +5,14 @@ namespace Craigslist;
 class CraigslistRequest
 {
     protected $city;
-
-    // For manually setting the request URL
     protected $uri;
-
-    protected $follow_links = false;
 
     // For dynamically building the request URL
     protected $category;
     protected $query;
+
+    // Flags the API to crawl further and get listing details
+    protected $follow_links = false;
 
     /**
      * @param array $config associative array of configuration settings listed above
