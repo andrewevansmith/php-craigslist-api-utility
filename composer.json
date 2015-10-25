@@ -1,0 +1,22 @@
+{
+	"name": "andrewevansmith/php-craigslist-api-utility",
+	"description": "PHP Craigslist API Utility",
+	"keywords": ['php', 'craigslist', 'craigslist api', 'craigslist scraping', 'utility'],
+    "homepage": "https://github.com/andrewevansmith/php-craigslist-api-utility",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Andrew Evan Smith",
+            "email": "andrew.evan.smith@gmail.com"
+        }
+    ],
+	"require": {
+		"php": ">=5.4.0",
+        "sunra/php-simple-html-dom-parser": "v1.5.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Craigslist\\": "src/"
+		}
+	},        
+}
