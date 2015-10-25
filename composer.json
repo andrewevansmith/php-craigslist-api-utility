@@ -1,7 +1,7 @@
 {
 	"name": "andrewevansmith/php-craigslist-api-utility",
 	"description": "PHP Craigslist API Utility",
-	"keywords": ['php', 'craigslist', 'craigslist api', 'craigslist scraping', 'utility'],
+	"keywords": ["php", "craigslist", "craigslist api", "craigslist scraping", "utility"],
     "homepage": "https://github.com/andrewevansmith/php-craigslist-api-utility",
 	"license": "MIT",
 	"authors": [
