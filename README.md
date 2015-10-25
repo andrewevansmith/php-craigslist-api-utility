@@ -59,15 +59,15 @@ Usage
     use Craigslist\CraigslistRequest;
     use Craigslist\CraigslistApi;
 
-    $request = new CraigslistRequest([
+    $request = new CraigslistRequest(array(
         'city' => 'louisville',
         'category' => 'pet',
         'query' => 'pup',
         'follow_links' => true,
-        'selectors' => [
-            [ 'label' => 'photos', 'element' => 'img', 'limit' => 10, 'target' => 'src' ],
-        ],
-    ]);
+        'selectors' => array(
+            array('label' => 'photos', 'element' => 'img', 'limit' => 10, 'target' => 'src'),
+        ),
+    ));
     $api = new CraigslistApi();
     $result = $api->get($request);
     ....
@@ -98,7 +98,7 @@ Usage
                 array('label' => 'photos', 'element' => 'img', 'limit' => 3, 'target' => 'src'),
             )
         )),
-    ));
+    );
     $api = new CraigslistApi();
     $result = $api->get($requests);
     ....
