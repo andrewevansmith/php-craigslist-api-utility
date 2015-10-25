@@ -46,14 +46,10 @@ Usage
     $request = new CraigslistRequest([
         'city' => 'louisville',
         'category' => 'pet',
-        'query' => 'pup',
-        'follow_links' => true,
-        'selectors' => [
-            [ 'label' => 'photos', 'element' => 'img', 'limit' => 10, 'target' => 'src' ],
-        ],
+        'query' => 'pup'
     ]);
     $api = new CraigslistApi();
-    var_dump( $api->get($request) );
+    $result = $api->get($request);
     ....
 ```
 
@@ -73,7 +69,7 @@ Usage
         ],
     ]);
     $api = new CraigslistApi();
-    var_dump( $api->get($request) );
+    $result = $api->get($request);
     ....
 ```
 
@@ -104,7 +100,7 @@ Usage
         )),
     ));
     $api = new CraigslistApi();
-    var_dump( $api->get($requests) );
+    $result = $api->get($requests);
     ....
 ```
 
