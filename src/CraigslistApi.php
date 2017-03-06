@@ -54,8 +54,8 @@ class CraigslistApi
                 $this->ids[] = $id;
                 $this->titles[] = (string) $item->title;
             }
-
-	        $children = $item->children("dc", true);
+			
+			$children = $item->children("dc", true);
 
             $results[$id] = [
                 'id' => $id,
