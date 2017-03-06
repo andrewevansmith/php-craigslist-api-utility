@@ -55,11 +55,14 @@ class CraigslistApi
                 $this->titles[] = (string) $item->title;
             }
 
+	        $children = $item->children("dc", true);
+
             $results[$id] = [
                 'id' => $id,
                 'link' => (string) $item->link,
                 'title' => (string) $item->title,
-                'description' => (string) $item->description
+                'description' => (string) $item->description,
+                'date' => (string) $children->date
             ];
 
             if ($request->follow()) {
