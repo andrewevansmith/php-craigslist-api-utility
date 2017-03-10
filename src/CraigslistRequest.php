@@ -5,7 +5,7 @@ namespace Craigslist;
 class CraigslistRequest
 {
     protected $city;
-    protected $uri;
+    protected $url;
 
     // For dynamically building the request URL
     protected $category;
@@ -36,7 +36,7 @@ class CraigslistRequest
     public function url()
     {
         if (isset($this->url) && strlen($this->url) > 0) {
-            $url =  'https://' . $this->city . '.craigslist.org/' . $this->uri;
+            $url =  'https://' . $this->city . '.craigslist.org/' . $this->url;
         } elseif (isset($this->category) && strlen($this->category) > 0) {
             $q = (isset($this->query) && strlen($this->query)) ? '&query=' . urlencode($this->query) : '';
             $url = 'https://' . urlencode($this->city) . '.craigslist.org/search/' . urlencode($this->category) . '?format=rss' . $q;
